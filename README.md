@@ -130,3 +130,5 @@ search test.org
 ```sudo /opt/rbta/aldpro/mp/bin/aldpro-server-install.sh -d test.org -n dc1 -p [ваш пароль] --ip [значение поля ip4.address] --no-reboot```
 
 Теперь установка закончена. Далее перезагружаемся и заходим в учётную запись admin домена test.org с тем паролем, который вы указали в последней команде. 
+
+!(https://github.com/user-attachments/assets/b4756055-a045-44d6-a3ae-224124fefc3d)
