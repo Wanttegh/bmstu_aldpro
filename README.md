@@ -106,7 +106,7 @@ Pin-Priority: 900
 
 Обновляем и перезагружаем
 
-```sudo apt update && sudo apt dist-upgrade -y && reboot```
+```sudo apt update && sudo apt dist-upgrade -y && sudo reboot```
 
 Устанавливаем портал ALDPro
 
