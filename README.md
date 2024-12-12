@@ -34,6 +34,9 @@ ip адрес контроллера домена везде писать в т�
 
 ```nmcli d show```
 
+![параметры сети](https://github.com/user-attachments/assets/7e2ec21c-5f8d-4726-a302-2ef669e25c3c)
+
+
 Теперь удаляем network manager
 
 ```
@@ -56,6 +59,9 @@ dns-nameservers [значение поля ip4.dns]
 dns-search test.org
 ```
 
+![настройки интерфейсов](https://github.com/user-attachments/assets/f9be85ec-8c3b-4893-87d2-03e025a2b272)
+
+
 Добавляем настройки в /etc/resolv.conf
 
 ```
@@ -64,6 +70,9 @@ sudo nano /etc/resolv.conf
 nameserver 1.1.1.1
 search test.org
 ```
+
+![настройки resolv.conf](https://github.com/user-attachments/assets/82dd55fd-97ac-46c0-bdcb-f875d24ef0c1)
+
 
 Указываем имя контроллера
 
@@ -78,6 +87,9 @@ sudo nano /etc/hosts
 [значение поля ip4.address]  dc1.test.org dc1
 127.0.1.1     dc1
 ```
+
+![настройки хостов](https://github.com/user-attachments/assets/32158525-d53e-40cf-8d73-d0cac1dcb178)
+
 
 Подключаем репозитории
 
@@ -94,6 +106,10 @@ deb https://dl.astralinux.ru/aldpro/stable/repository-main/ 1.4.1 main
 deb https://dl.astralinux.ru/aldpro/stable/repository-extended/ generic main
 ```
 
+![файл sources.list](https://github.com/user-attachments/assets/21f53957-2b0c-4a12-b71b-5fc9b4bab82a)
+
+![файл aldpro.list](https://github.com/user-attachments/assets/560665cb-202d-4a38-848e-adea462075c3)
+
 Создаём файл приоритета 
 
 ```
@@ -103,6 +119,9 @@ Package: *
 Pin: release n=generic
 Pin-Priority: 900
 ```
+
+![настройки файла приоритета](https://github.com/user-attachments/assets/d3ffed02-399c-47eb-8a37-ee53ae6ae808)
+
 
 Обновляем и перезагружаем
 
@@ -120,6 +139,9 @@ sudo nano /etc/resolv.conf
 nameserver 127.0.0.1
 search test.org
 ```
+
+![меняем resolv.conf](https://github.com/user-attachments/assets/ca17a480-9197-4358-ac67-32ce34224b49)
+
 
 Перезапускаем сеть
 
