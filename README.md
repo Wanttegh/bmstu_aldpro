@@ -99,12 +99,15 @@ Pin-Priority: 900
 ```
 
 Обновляем и перезагружаем
+
 ```sudo apt update && sudo apt dist-upgrade -y && reboot```
 
 Устанавливаем портал ALDPro
+
 ```sudo DEBIAN_FRONTEND=noninteractive apt-get install -q -y aldpro-mp```
 
 Редактируем /etc/resolv.conf
+
 ```
 sudo nano /etc/resolv.conf
 
@@ -113,6 +116,7 @@ search test.org
 ```
 
 Перезапускаем сеть
+
 ```sudo systemctl restart networking```
 
 Продвигаем сервер до роли контроллера домена
