@@ -131,4 +131,4 @@ search test.org
 
 Теперь установка закончена. Далее перезагружаемся и заходим в учётную запись admin домена test.org с тем паролем, который вы указали в последней команде. 
 
-!(https://github.com/user-attachments/assets/b4756055-a045-44d6-a3ae-224124fefc3d)
+![окно входа](https://github.com/user-attachments/assets/b4756055-a045-44d6-a3ae-224124fefc3d)
