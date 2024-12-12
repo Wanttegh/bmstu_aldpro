@@ -60,11 +60,11 @@ dns-search test.org
 sudo nano /etc/resolv.conf
 
 nameserver 1.1.1.1
-search [имя домена из /etc/network/interfaces]
+search test.org
 ```
 
 Указываем имя контроллера
-```sudo hostnamectl set-hostname [имя домена, default = dc1].[домен, default = test.org]```
+```sudo hostnamectl set-hostname dc1.test.org```
 
 Меняем настройки в /etc/hosts
 ```
