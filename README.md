@@ -35,6 +35,7 @@ ip адрес контроллера домена везде писать в т�
 ```nmcli d show```
 
 Теперь удаляем network manager
+
 ```
 sudo systemctl stop network-manager
 sudo systemctl disable network-manager
@@ -56,6 +57,7 @@ dns-search test.org
 ```
 
 Добавляем настройки в /etc/resolv.conf
+
 ```
 sudo nano /etc/resolv.conf
 
@@ -64,9 +66,11 @@ search test.org
 ```
 
 Указываем имя контроллера
+
 ```sudo hostnamectl set-hostname dc1.test.org```
 
 Меняем настройки в /etc/hosts
+
 ```
 sudo nano /etc/hosts
 
@@ -76,6 +80,7 @@ sudo nano /etc/hosts
 ```
 
 Подключаем репозитории
+
 ```
 sudo nano /etc/apt/sources.list
 
@@ -90,6 +95,7 @@ deb https://dl.astralinux.ru/aldpro/stable/repository-extended/ generic main
 ```
 
 Создаём файл приоритета 
+
 ```
 sudo nano /etc/apt/preferences.d/aldpro
 
@@ -120,6 +126,7 @@ search test.org
 ```sudo systemctl restart networking```
 
 Продвигаем сервер до роли контроллера домена
+
 ```sudo /opt/rbta/aldpro/mp/bin/aldpro-server-install.sh -d test.org -n dc1 -p [ваш пароль] --ip [значение поля ip4.address] --no-reboot```
 
 Теперь установка закончена
